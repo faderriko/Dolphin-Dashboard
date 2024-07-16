@@ -30,7 +30,7 @@ export default function ValidatePayments() {
   const [paymentDetails, setPaymentDetails] = useState({})
   const [messageError, setMessageError] = useState(false)
   useEffect(() => {
-    fetch('https://faderriko.github.io/nyota/payments.json')
+    fetch('https://faderriko.github.io/Dolphin/payments.json')
       .then(response => response.json())
       .then((data) => (
         setPackageItem(data.surveyPlans[location.state.index]), setPaymentDetails(data.mpesaPaymentDetails), setProgress(false)

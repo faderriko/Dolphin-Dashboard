@@ -6,7 +6,7 @@ import Tabs from '../../components/ResponsiveAppBar'
 export default function Packages() {
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-        fetch('https://faderriko.github.io/nyota/payments.json')
+        fetch('https://faderriko.github.io/Dolphin/payments.json')
             .then(response => response.json())
             .then(data => setPackages(data.surveyPlans));
     }, []);

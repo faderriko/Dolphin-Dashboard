@@ -21,7 +21,7 @@ export default function ProfileCard() {
     const [surveysLength, setSurveysLength] = useState([]);
 
     useEffect(() => {
-        fetch('https://faderriko.github.io/nyota/nyota.json')
+        fetch('https://faderriko.github.io/Dolphin/surveys.json')
             .then(response => response.json())
             .then(data => {
                 setSurveysLength(data.surveys.length)
